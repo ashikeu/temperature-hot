@@ -57,7 +57,7 @@
     <script>
       function loadData() {
         const locationName = document.getElementById('location-name').value;
-        console.log(locationName);
+        //console.log(locationName);
         //const apiLink = `http://api.openweathermap.org/data/2.5/weather?q=${locationName}&APPID=a87928319a4c6bd93d6f31ae4af03cc8`;
         const apiLink =
           'http://api.openweathermap.org/data/2.5/weather?q=' +
@@ -77,7 +77,7 @@
             document.getElementById('icon').src = weatherIcon;
             const weatherTemp = data.main.feels_like;
             document.getElementById('temp').innerText = Math.round(
-              parseFloat(weatherTemp) + -272.15;
+              parseFloat(weatherTemp) + -272.15
             );
             //console.log(data.name);
             //console.log(data);
